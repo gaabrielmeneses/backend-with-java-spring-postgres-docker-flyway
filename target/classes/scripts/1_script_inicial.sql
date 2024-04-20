@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS public.pato
 (
     id uuid NOT NULL,
     nome character varying NOT NULL,
-    preco double precision DEFAULT 70.00,
+    valor double precision DEFAULT 70.00,
     vendido boolean DEFAULT false,
     mae boolean DEFAULT false,
     PRIMARY KEY (id)
@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS public.venda_pato
     id uuid NOT NULL,
     fk_cliente_id uuid NOT NULL,
     fk_pato_id uuid NOT NULL,
+    valor_venda double precision NOT NULL
     PRIMARY KEY (id)
 );
 

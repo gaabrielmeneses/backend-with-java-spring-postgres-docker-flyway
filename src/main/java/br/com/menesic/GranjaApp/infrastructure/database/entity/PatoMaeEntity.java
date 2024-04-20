@@ -12,6 +12,8 @@ import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.util.UUID;
 
@@ -30,9 +32,11 @@ public class PatoMaeEntity {
     @Column(name = "id", columnDefinition = "uuid")
     private UUID id;
 
-    @Column(name = "fk_pato_filho_id")
-    private PatoEntity patoFilho;
+    @ManyToOne
+    @JoinColumn(name = "fk_pato_filho")
+    private PatoEntity filho;
 
-    @Column(name = "fk_pato_mae_id")
-    private PatoEntity patoMae;
+    @ManyToOne
+    @JoinColumn(name = "fk_pato_mae")
+    private PatoEntity mae;
 }
