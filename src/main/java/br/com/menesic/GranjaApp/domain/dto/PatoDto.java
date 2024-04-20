@@ -14,4 +14,6 @@ public class PatoDto {
 
     @NotBlank(message = "É necessário indicar o nome do pato no momento do cadastro.")
     private String nome;
+    private BigDecimal valor;
+    private Boolean vendido;
 }
