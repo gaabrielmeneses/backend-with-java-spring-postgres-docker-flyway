@@ -21,7 +21,6 @@ public class Pato {
     private Boolean mae;
 
     public static Pato builderMae(String nome, Boolean vendido) {
-
         return builder()
                 .nome(nome)
                 .valor(ValorPatoEnum.VALOR_PATO_MAE.getValor())

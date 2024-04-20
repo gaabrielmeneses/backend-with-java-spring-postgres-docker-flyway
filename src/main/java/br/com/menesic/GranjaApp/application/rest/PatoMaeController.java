@@ -1,8 +1,8 @@
 package br.com.menesic.GranjaApp.application.rest;
 
 import br.com.menesic.GranjaApp.application.config.swagger.ApiOperation;
+import br.com.menesic.GranjaApp.domain.dto.PatoMaeDto;
 import br.com.menesic.GranjaApp.domain.model.PatoMae;
-import br.com.menesic.GranjaApp.domain.model.dto.PatoMaeDto;
 import br.com.menesic.GranjaApp.domain.port.usecase.patomae.CreatePatoMaeUseCase;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

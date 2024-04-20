@@ -11,6 +11,6 @@ import java.util.UUID;
 @NoArgsConstructor
 public class PatoMae {
         private UUID id;
-        private Pato pato;
+        private Pato filho;
         private Pato mae;
 }

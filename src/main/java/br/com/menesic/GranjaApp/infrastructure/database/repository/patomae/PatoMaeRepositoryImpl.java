@@ -18,7 +18,7 @@ public class PatoMaeRepositoryImpl implements PatoMaeRepository {
 
     @Override
     public PatoMae save(PatoMae patoMae) {
-        log.info("[PatoMaeRepositoryImpl] - save - pato: {}, mae: {}", patoMae.getPato().getNome(), patoMae.getMae().getNome());
+        log.info("[PatoMaeRepositoryImpl] - save - pato: {}, mae: {}", patoMae.getFilho().getNome(), patoMae.getMae().getNome());
         PatoMaeEntity patoSaved = databaseRepository.save(modelMapper.map(patoMae, PatoMaeEntity.class));
         return modelMapper.map(patoSaved, PatoMae.class);
     }

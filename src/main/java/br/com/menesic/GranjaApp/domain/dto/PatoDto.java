@@ -1,4 +1,4 @@
-package br.com.menesic.GranjaApp.domain.model.dto;
+package br.com.menesic.GranjaApp.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

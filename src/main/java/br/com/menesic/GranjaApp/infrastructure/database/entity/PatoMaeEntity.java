@@ -34,7 +34,7 @@ public class PatoMaeEntity {
 
     @ManyToOne
     @JoinColumn(name = "fk_pato_filho")
-    private PatoEntity pato;
+    private PatoEntity filho;
 
     @ManyToOne
     @JoinColumn(name = "fk_pato_mae")

@@ -1,5 +1,6 @@
 package br.com.menesic.GranjaApp.domain.adapters.patomae;
 
+import br.com.menesic.GranjaApp.domain.enums.ValorPatoEnum;
 import br.com.menesic.GranjaApp.domain.model.Pato;
 import br.com.menesic.GranjaApp.domain.model.PatoMae;
 import br.com.menesic.GranjaApp.domain.port.usecase.pato.CreatePatoUseCase;
@@ -24,36 +25,44 @@ public class CreatePatoMaeUseCaseImpl implements CreatePatoMaeUseCase {
     @Transactional
     public PatoMae save(PatoMae patoMae) {
         log.info("[CreatePatoMaeUseCaseImpl] - save");
-        patoMae = mapMae(patoMae);
-        patoMae = mapFilho(patoMae);
+        patoMae = saveMae(patoMae);
+        patoMae = saveFilho(patoMae);
         PatoMae patoMaeSaved = patoMaeRepository.save(patoMae);
-        log.info("[CreatePatoMaeUseCaseImpl] - save - pato: {}, mae: {} - SUCCESS", patoMae.getPato().getNome(), patoMae.getMae().getNome());
+        log.info("[CreatePatoMaeUseCaseImpl] - save - pato: {}, mae: {} - SUCCESS", patoMae.getFilho().getNome(), patoMae.getMae().getNome());
         return patoMaeSaved;
     }
 
-    private PatoMae mapFilho(PatoMae patoMae) {
-        Pato filho = createPatoUseCase.save(
+    private PatoMae saveFilho(PatoMae patoMae) {
+        Pato filho = patoMae.getFilho();
+        createPatoUseCase.save(
             Pato.builderFilho(
-                patoMae.getPato().getNome(),
-                patoMae.getPato().getVendido()
+                filho.getNome(),
+                filho.getVendido()
             )
         );
-        patoMae.setPato(filho);
+        patoMae.setFilho(filho);
         return patoMae;
     }
 
-    private PatoMae mapMae(PatoMae patoMae) {
+    private PatoMae saveMae(PatoMae patoMae) {
         Pato mae = patoMae.getMae();
-        findPatoUseCase.findByNome(mae.getNome()).ifPresentOrElse(
-            pato -> patoMae.setMae(pato),
-            () -> patoMae.setMae(
-                createPatoUseCase.save(
-                    Pato.builderMae(
-                        mae.getNome(),
-                        mae.getVendido()
+        findPatoUseCase.findByNome(mae.getNome())
+            .ifPresentOrElse(
+                pato -> {
+                    if(!pato.getMae()){
+                        pato.setMae(true);
+                        pato.setValor(ValorPatoEnum.VALOR_PATO_MAE.getValor());
+                    }
+                    patoMae.setMae(pato);
+                },
+                () -> patoMae.setMae(
+                    createPatoUseCase.save(
+                        Pato.builderMae(
+                            mae.getNome(),
+                            mae.getVendido()
+                        )
                     )
                 )
-            )
         );
         return patoMae;
     }
