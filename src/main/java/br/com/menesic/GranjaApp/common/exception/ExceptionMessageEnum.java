@@ -15,8 +15,6 @@ import static lombok.AccessLevel.PRIVATE;
 @Getter
 @RequiredArgsConstructor(access = PRIVATE)
 public enum ExceptionMessageEnum {
-
-    ERRO_PERMISSAO_NEGADA("ERR-PERM-NEG-01", "erro_permissao_negada"),
     ERRO_INESPERADO("ERR-INESP-01", "erro_inesperado"),
     FALHA_VALIDACAO_CAMPO("EXC-VALID-02", "falha_validacao_no_campo"),
     FORMATO_DE_ARQUIVO_INVALIDO("FINV-EXC-00", "formato_de_arquivo_invalido"),
@@ -45,4 +43,4 @@ public enum ExceptionMessageEnum {
                 .collect(Collectors.joining()) + placeholders[placeholders.length - 1];
     }
 
-    }
+}

@@ -1,4 +1,25 @@
 package br.com.menesic.GranjaApp.infrastructure.database.repository.cliente;
 
-public class ClienteRepositoryImpl {
+import br.com.menesic.GranjaApp.domain.model.Cliente;
+import br.com.menesic.GranjaApp.domain.port.repository.ClienteRepository;
+import br.com.menesic.GranjaApp.infrastructure.database.entity.ClienteEntity;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
+
+@Component
+@RequiredArgsConstructor
+@Slf4j
+public class ClienteRepositoryImpl implements ClienteRepository {
+
+    private final ClienteDatabaseRepository databaseRepository;
+    private final ModelMapper modelMapper;
+
+    @Override
+    public Cliente save(Cliente cliente) {
+        log.info("[ClienteRepositoryImpl] - save: {}", cliente.getNome());
+        ClienteEntity clienteSaved = databaseRepository.save(modelMapper.map(cliente, ClienteEntity.class));
+        return modelMapper.map(clienteSaved, Cliente.class);
+    }
 }
