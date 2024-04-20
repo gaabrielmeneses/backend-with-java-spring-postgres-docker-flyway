@@ -31,9 +31,10 @@ public class PatoEntity {
     @Column(name = "id", columnDefinition = "uuid")
     private UUID id;
 
+    @Column(name = "fk_mae_id")
+    private PatoEntity mae;
     private String nome;
     private BigDecimal valor;
     private Boolean vendido;
-    private Boolean mae;
 
 }

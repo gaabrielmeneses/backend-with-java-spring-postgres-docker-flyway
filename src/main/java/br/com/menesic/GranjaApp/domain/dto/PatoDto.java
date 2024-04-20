@@ -16,5 +16,5 @@ public class PatoDto {
     private String nome;
     private BigDecimal valor;
     private Boolean vendido;
-    private Boolean mae;
+    private PatoDto mae;
 }

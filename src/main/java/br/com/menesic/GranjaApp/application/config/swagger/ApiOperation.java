@@ -1,5 +1,6 @@
 package br.com.menesic.GranjaApp.application.config.swagger;
 
+import br.com.menesic.GranjaApp.common.exception.APIException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

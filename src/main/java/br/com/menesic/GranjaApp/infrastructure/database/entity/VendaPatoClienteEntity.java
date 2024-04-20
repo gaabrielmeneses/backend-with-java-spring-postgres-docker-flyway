@@ -14,7 +14,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Data
@@ -23,9 +25,9 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "pato_mae")
+@Table(name = "venda_pato_cliente")
 @EntityListeners(AuditingEntityListener.class)
-public class PatoMaeEntity {
+public class VendaPatoClienteEntity {
 
     @Id
     @GeneratedValue
@@ -33,10 +35,12 @@ public class PatoMaeEntity {
     private UUID id;
 
     @ManyToOne
-    @JoinColumn(name = "fk_pato_filho")
-    private PatoEntity filho;
+    @JoinColumn(name = "fk_cliente_id")
+    private ClienteEntity cliente;
 
-    @ManyToOne
-    @JoinColumn(name = "fk_pato_mae")
-    private PatoEntity mae;
+    @OneToOne
+    @JoinColumn(name = "fk_pato_id")
+    private PatoEntity pato;
+
+    private BigDecimal valor;
 }

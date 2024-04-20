@@ -1,6 +1,5 @@
 package br.com.menesic.GranjaApp.common.exception;
 
-import br.com.menesic.GranjaApp.application.config.swagger.APIException;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

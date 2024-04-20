@@ -1,6 +1,5 @@
 package br.com.menesic.GranjaApp.common.exception;
 
-import br.com.menesic.GranjaApp.application.config.swagger.APIException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

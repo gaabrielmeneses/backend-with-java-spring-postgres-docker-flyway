@@ -18,23 +18,5 @@ public class Pato {
     private String nome;
     private BigDecimal valor;
     private Boolean vendido;
-    private Boolean mae;
-
-    public static Pato builderMae(String nome, Boolean vendido) {
-        return builder()
-                .nome(nome)
-                .valor(ValorPatoEnum.VALOR_PATO_MAE.getValor())
-                .vendido(vendido)
-                .mae(true)
-                .build();
-    }
-
-    public static Pato builderFilho(String nome, Boolean vendido) {
-        return builder()
-                .nome(nome)
-                .valor(ValorPatoEnum.VALOR_PATO_FILHO.getValor())
-                .vendido(vendido)
-                .mae(false)
-                .build();
-    }
+    private Pato patoMae;
 }

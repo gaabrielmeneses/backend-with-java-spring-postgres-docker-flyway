@@ -1,4 +1,4 @@
-package br.com.menesic.GranjaApp.application.config.swagger;
+package br.com.menesic.GranjaApp.common.exception;
 
 
 import io.swagger.v3.oas.annotations.media.Schema;
