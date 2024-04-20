@@ -7,7 +7,6 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
@@ -15,9 +14,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -36,10 +33,10 @@ public class PatoMaeEntity {
     private UUID id;
 
     @ManyToOne
-    @JoinColumn(name = "pato_filho_id")
-    private PatoEntity patoFilho;
+    @JoinColumn(name = "fk_pato_filho")
+    private PatoEntity pato;
 
     @ManyToOne
-    @JoinColumn(name = "pato_mae_id")
-    private PatoEntity patoMae;
+    @JoinColumn(name = "fk_pato_mae")
+    private PatoEntity mae;
 }

@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
+import java.util.Optional;
+
 @Component
 @RequiredArgsConstructor
 @Slf4j
@@ -18,8 +20,15 @@ public class PatoRepositoryImpl implements PatoRepository {
 
     @Override
     public Pato save(Pato pato) {
-        log.info("[PatoDBRepositoryImpl] - save: {}", pato.getNome());
+        log.info("[PatoRepositoryImpl] - save: {}", pato.getNome());
         PatoEntity patoSaved = databaseRepository.save(modelMapper.map(pato, PatoEntity.class));
         return modelMapper.map(patoSaved, Pato.class);
+    }
+
+    @Override
+    public Optional<Pato> findByNome(String nome) {
+        log.info("[PatoRepositoryImpl] - findByNome: {}", nome);
+        Optional<PatoEntity> patoSaved = databaseRepository.findByNome(nome);
+        return Optional.ofNullable(modelMapper.map(patoSaved, Pato.class));
     }
 }
