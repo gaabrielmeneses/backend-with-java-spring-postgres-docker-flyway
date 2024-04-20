@@ -12,6 +12,9 @@ import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -31,10 +34,12 @@ public class VendaPatoEntity {
     @Column(name = "id", columnDefinition = "uuid")
     private UUID id;
 
-    @Column(name = "fk_cliente_id")
+    @ManyToOne
+    @JoinColumn(name = "fk_cliente_id")
     private ClienteEntity cliente;
 
-    @Column(name = "fk_pato_id")
+    @OneToOne
+    @JoinColumn(name = "fk_pato_id")
     private PatoEntity pato;
 
     private BigDecimal valorVenda;

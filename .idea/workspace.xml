@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4132a17-cd10-4ba4-9fd4-908e0288ada4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/pato/PatoDatabaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/pato/PatoRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/scripts/1_script_inicial.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/scripts/1_script_inicial.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/ClienteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/ClienteEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/PatoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/PatoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/PatoMaeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/PatoMaeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/VendaPatoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/VendaPatoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/cliente/ClienteDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/cliente/ClienteDatabaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/cliente/ClienteDBRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/cliente/ClienteRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/pato/PatoDBRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/pato/PatoDBRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/patomae/PatoMaeDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/patomae/PatoMaeDatabaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/patomae/PatoMaeDBRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/patomae/PatoMaeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/vendapato/VendaPatoDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/vendapato/VendaPatoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/vendapato/VendaPatoDBRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/repository/vendapato/VendaPatoRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scripts/1_script_inicial.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scripts/1_script_inicial.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,6 +48,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/crud-pato" />
+                    <option name="lastUsedInstant" value="1713596115" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/database-setup" />
                     <option name="lastUsedInstant" value="1713594261" />
@@ -99,6 +118,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.menesic.GranjaApp.domain.dto" />
       <recent name="br.com.menesic.GranjaApp.infrastructure.database.repository.vendapato" />
       <recent name="br.com.menesic.GranjaApp.infrastructure.database.repository.cliente" />
       <recent name="br.com.menesic.GranjaApp.infrastructure.database.repository.patomae" />
