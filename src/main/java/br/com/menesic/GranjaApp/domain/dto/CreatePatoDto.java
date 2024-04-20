@@ -10,8 +10,8 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PatoDto {
+public class CreatePatoDto {
 
-    @NotBlank(message = "É necessário indicar o nome do pato no momento do cadastro.")
-    private String nome;
+    private PatoDto pato;
+    private PatoDto patoMae;
 }
