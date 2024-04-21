@@ -32,7 +32,7 @@ public class Pato {
     public static Pato builderFilho(String nome, Pato mae) {
         return builder()
                 .nome(nome)
-                .valor(ValorPatoEnum.VALOR_PATO_MAE.getValor())
+                .valor(ValorPatoEnum.VALOR_PATO_FILHO.getValor())
                 .vendido(false)
                 .mae(mae)
                 .build();

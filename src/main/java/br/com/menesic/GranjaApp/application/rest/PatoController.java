@@ -3,8 +3,7 @@ package br.com.menesic.GranjaApp.application.rest;
 import br.com.menesic.GranjaApp.application.config.swagger.ApiOperation;
 import br.com.menesic.GranjaApp.domain.dto.CreatePatoDto;
 import br.com.menesic.GranjaApp.domain.dto.PatoDto;
-import br.com.menesic.GranjaApp.domain.model.Pato;
-import br.com.menesic.GranjaApp.domain.port.usecase.pato.CreatePatoUseCase;
+import br.com.menesic.GranjaApp.domain.ports.usecase.pato.CreatePatoUseCase;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.util.UUID;
 
 @Tag(name = "Controller Pato")
 @Slf4j

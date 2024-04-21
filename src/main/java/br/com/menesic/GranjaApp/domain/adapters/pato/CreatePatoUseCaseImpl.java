@@ -1,10 +1,9 @@
 package br.com.menesic.GranjaApp.domain.adapters.pato;
 
-import br.com.menesic.GranjaApp.common.exception.ExceptionMessageEnum;
 import br.com.menesic.GranjaApp.domain.dto.CreatePatoDto;
 import br.com.menesic.GranjaApp.domain.model.Pato;
-import br.com.menesic.GranjaApp.domain.port.repository.PatoRepository;
-import br.com.menesic.GranjaApp.domain.port.usecase.pato.CreatePatoUseCase;
+import br.com.menesic.GranjaApp.domain.ports.repository.PatoRepository;
+import br.com.menesic.GranjaApp.domain.ports.usecase.pato.CreatePatoUseCase;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -29,7 +28,7 @@ public class CreatePatoUseCaseImpl implements CreatePatoUseCase {
 
         patoRepository.findByNome(createPatoDto.getPato().getNome())
                 .ifPresent(p -> {
-                    throw new EntityExistsException(ExceptionMessageEnum.ELEMENTO_JA_EXISTE.getMessage());
+                    throw new EntityExistsException("Este pato já está registrado em nossa base de dados!");
                 });
 
         Pato patoFilhoSaved = patoRepository.save(patoFilho);

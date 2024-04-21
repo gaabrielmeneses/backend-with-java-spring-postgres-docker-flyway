@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS public.cliente
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.venda_pato_cliente
+CREATE TABLE IF NOT EXISTS public.venda
 (
     id uuid NOT NULL,
     fk_cliente_id uuid NOT NULL,
@@ -38,7 +38,7 @@ ALTER TABLE IF EXISTS public.pato
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.venda_pato_cliente
+ALTER TABLE IF EXISTS public.venda
     ADD CONSTRAINT fk_cliente_id FOREIGN KEY (fk_cliente_id)
     REFERENCES public.cliente (id) MATCH SIMPLE
     ON UPDATE NO ACTION
@@ -46,7 +46,7 @@ ALTER TABLE IF EXISTS public.venda_pato_cliente
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public.venda_pato_cliente
+ALTER TABLE IF EXISTS public.venda
     ADD CONSTRAINT fk_pato_id FOREIGN KEY (fk_pato_id)
     REFERENCES public.pato (id) MATCH SIMPLE
     ON UPDATE NO ACTION
