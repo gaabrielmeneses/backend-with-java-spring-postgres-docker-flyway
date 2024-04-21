@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class PatoDto {
 
-    @NotBlank(message = "É necessário indicar o nome do pato no momento do cadastro.")
+    @NotBlank(message = "É necessário preencher o nome do pato no momento do cadastro.")
     private String nome;
     private BigDecimal valor;
     private Boolean vendido;
