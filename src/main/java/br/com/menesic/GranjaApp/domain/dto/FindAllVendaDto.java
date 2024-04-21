@@ -1,20 +1,19 @@
 package br.com.menesic.GranjaApp.domain.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PatoDto {
-
-    @NotBlank(message = "É necessário preencher o nome do pato no momento do cadastro.")
-    private String nome;
+@Builder
+public class FindAllVendaDto {
+    private ClienteDto cliente;
+    private PatoDto pato;
     private BigDecimal valor;
-    private Boolean vendido;
-    private PatoDto mae;
 }
