@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface FindVendaUseCase {
     List<Venda> findAll();
+
+    byte[] downloadReport(String tipoArquivo);
 }

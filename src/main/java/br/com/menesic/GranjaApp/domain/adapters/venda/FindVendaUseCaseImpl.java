@@ -20,4 +20,9 @@ public class FindVendaUseCaseImpl implements FindVendaUseCase {
     public List<Venda> findAll() {
         return vendaRepository.findAll();
     }
+
+    @Override
+    public byte[] downloadReport(String tipoArquivo) {
+        return null;
+    }
 }

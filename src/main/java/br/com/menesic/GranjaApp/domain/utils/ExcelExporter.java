@@ -1,5 +1,6 @@
 package br.com.menesic.GranjaApp.domain.utils;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
@@ -11,7 +12,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
+import org.springframework.stereotype.Service;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -19,7 +22,66 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 public class ExcelExporter {
+
+    public byte[] getXlsxReport(List<Map<String, String>> jsonList, String excelFilePath) throws IOException {
+        try (Workbook workbook = new HSSFWorkbook()) {
+            Sheet sheet = workbook.createSheet("Relatório de gerenciamento de patos");
+
+            // Cabeçalho "GERENCIAMENTO DE PATOS"
+            CellRangeAddress region = new CellRangeAddress(1, 1, 1, 5);
+            sheet.addMergedRegion(region);
+            Row titleRow = sheet.createRow(1);
+            Cell titleCell = titleRow.createCell(1);
+            titleCell.setCellValue("GERENCIAMENTO DE PATOS");
+            titleCell.setCellStyle(createTitleCellStyle(workbook));
+
+            // Cabeçalho das Colunas
+            Row headerRow = sheet.createRow(2);
+            String[] headers = {"Nome", "Status", "Cliente", "Tipo do cliente", "Valor"};
+            CellStyle headerCellStyle = createHeaderCellStyle(workbook);
+            for (int i = 0; i < headers.length; i++) {
+                Cell cell = headerRow.createCell(i+1);
+                cell.setCellValue(headers[i]);
+                cell.setCellStyle(headerCellStyle);
+            }
+
+            // Preenchimento dos dados
+            int rowNum = 3;
+            for (Map<String, String> jsonMap : jsonList) {
+                Row row = sheet.createRow(rowNum++);
+                int colNum = 2;
+                for (String header : headers) {
+                    Cell cell = row.createCell(colNum++);
+                    Object value = jsonMap.get(header.toLowerCase().replace(" ", "_"));
+                    if (value == null) {
+                        cell.setCellValue("-");
+                    } else if (value instanceof String) {
+                        cell.setCellValue(((String) value));
+                    } else {
+                        cell.setCellValue(value.toString());
+                    }
+                }
+            }
+
+            // Ajusta automaticamente a largura das colunas
+            for (int i = 0; i < headers.length; i++) {
+                sheet.autoSizeColumn(i+4);
+            }
+
+            // Escreve no arquivo Excel
+            try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
+                workbook.write(outputStream);
+                log.info("Arquivo .xlsx criado com sucesso!");
+                return outputStream.toByteArray();
+            } catch (Exception e) {
+                log.error("Erro ao gerar arquivo .xlsx!", e.getStackTrace());
+                return new byte[0];
+            }
+        }
+    }
+
     public static void export(List<Map<String, String>> jsonList, String excelFilePath) throws IOException {
         try (Workbook workbook = new HSSFWorkbook()) {
             Sheet sheet = workbook.createSheet("Relatório de gerenciamento de patos");

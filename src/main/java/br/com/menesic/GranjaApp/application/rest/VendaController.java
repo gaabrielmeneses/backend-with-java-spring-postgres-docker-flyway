@@ -1,6 +1,6 @@
 package br.com.menesic.GranjaApp.application.rest;
 
-import br.com.menesic.GranjaApp.application.config.swagger.ApiOperation;
+import br.com.menesic.GranjaApp.application.config.swagger.APIOperation;
 import br.com.menesic.GranjaApp.domain.dto.FindAllVendaDto;
 import br.com.menesic.GranjaApp.domain.dto.VendaDto;
 import br.com.menesic.GranjaApp.domain.ports.usecase.venda.CreateVendaUseCase;
@@ -32,7 +32,7 @@ public class VendaController {
     private final FindVendaUseCase findVendaUseCase;
     private final ModelMapper modelMapper;
 
-    @ApiOperation(
+    @APIOperation(
             method = "POST",
             description = "Registrar venda",
             summary = "Registrar venda"
@@ -43,7 +43,7 @@ public class VendaController {
         createVendaUseCase.save(vendaDto);
     }
 
-    @ApiOperation(
+    @APIOperation(
             method = "POST",
             description = "Buscar todas as vendas",
             summary = "Buscar todas as vendas"

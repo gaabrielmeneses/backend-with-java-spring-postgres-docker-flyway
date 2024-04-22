@@ -1,6 +1,6 @@
 package br.com.menesic.GranjaApp.application.rest;
 
-import br.com.menesic.GranjaApp.application.config.swagger.ApiOperation;
+import br.com.menesic.GranjaApp.application.config.swagger.APIOperation;
 import br.com.menesic.GranjaApp.domain.dto.ClienteDto;
 import br.com.menesic.GranjaApp.domain.model.Cliente;
 import br.com.menesic.GranjaApp.domain.ports.usecase.cliente.CreateClienteUseCase;
@@ -29,7 +29,7 @@ public class ClienteController {
     private final CreateClienteUseCase createClienteUseCase;
     private final ModelMapper modelMapper;
 
-    @ApiOperation(
+    @APIOperation(
             method = "POST",
             description = "Salvar Cliente",
             summary = "Salvar Cliente"

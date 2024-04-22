@@ -25,7 +25,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @RestControllerAdvice
 public class APIExceptionHandler extends ResponseEntityExceptionHandler {
-    private final String DEFAULT_ERROR_MESSAGE = "Contacte o administrador com o codigo %s";
+    private final String DEFAULT_ERROR_MESSAGE = "Contacte o criador do sistema: gmsn@icomp.ufam.edu.br";
 
     @ExceptionHandler(APIException.class)
     public ResponseEntity<Object> handleApiException(APIException ex, WebRequest request){

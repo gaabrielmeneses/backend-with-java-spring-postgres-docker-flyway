@@ -1,6 +1,6 @@
 package br.com.menesic.GranjaApp.application.rest;
 
-import br.com.menesic.GranjaApp.application.config.swagger.ApiOperation;
+import br.com.menesic.GranjaApp.application.config.swagger.APIOperation;
 import br.com.menesic.GranjaApp.domain.dto.CreatePatoDto;
 import br.com.menesic.GranjaApp.domain.dto.PatoDto;
 import br.com.menesic.GranjaApp.domain.ports.usecase.pato.CreatePatoUseCase;
@@ -28,7 +28,7 @@ public class PatoController {
     private final CreatePatoUseCase createPatoUseCase;
     private final ModelMapper modelMapper;
 
-    @ApiOperation(
+    @APIOperation(
             method = "POST",
             description = "Salvar Pato",
             summary = "Salvar Pato e Mae(Pato)"

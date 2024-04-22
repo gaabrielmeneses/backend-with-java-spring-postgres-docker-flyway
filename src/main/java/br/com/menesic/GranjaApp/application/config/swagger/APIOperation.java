@@ -47,7 +47,7 @@ import java.lang.annotation.Target;
                         description = "Não encontrado"
                 ),
         })
-public @interface ApiOperation {
+public @interface APIOperation {
     String method();
 
     String description();
