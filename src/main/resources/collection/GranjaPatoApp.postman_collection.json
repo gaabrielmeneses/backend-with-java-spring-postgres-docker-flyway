@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "aa0934aa-9017-45cb-92c9-521c8c134eb0",
+		"name": "GranjaPatoApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9982670",
+		"_collection_link": "https://lively-sunset-190259.postman.co/workspace/Testes-Endpoints~22e44f9d-f396-4b63-b8ed-83e3385c0ae4/collection/9982670-aa0934aa-9017-45cb-92c9-521c8c134eb0?action=share&source=collection_link&creator=9982670"
+	},
+	"item": [
+		{
+			"name": "Create Pato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pato\": {\r\n    \"nome\": \"Pato 1.0\"\r\n  },\r\n  \"patoMae\": {\r\n    \"nome\": \"Pato Mae 1.0\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint-gateway}}/granjaApp/v1/pato",
+					"host": [
+						"{{endpoint-gateway}}"
+					],
+					"path": [
+						"granjaApp",
+						"v1",
+						"pato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Cliente 1\",\r\n  \"desconto\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint-gateway}}/granjaApp/v1/cliente",
+					"host": [
+						"{{endpoint-gateway}}"
+					],
+					"path": [
+						"granjaApp",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Venda",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cliente\": {\r\n        \"nome\": \"Cliente 2\"\r\n    },\r\n    \"pato\": [\r\n        {\r\n            \"nome\": \"Pato Mae 1.0\"\r\n        },\r\n        {\r\n            \"nome\": \"Pato 1.0\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint-gateway}}/granjaApp/v1/venda",
+					"host": [
+						"{{endpoint-gateway}}"
+					],
+					"path": [
+						"granjaApp",
+						"v1",
+						"venda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Vendas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint-gateway}}/granjaApp/v1/venda",
+					"host": [
+						"{{endpoint-gateway}}"
+					],
+					"path": [
+						"granjaApp",
+						"v1",
+						"venda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Vendas (.xls ou .pdf)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint-gateway}}/granjaApp/v1/venda/download/:tipoArquivo",
+					"host": [
+						"{{endpoint-gateway}}"
+					],
+					"path": [
+						"granjaApp",
+						"v1",
+						"venda",
+						"download",
+						":tipoArquivo"
+					],
+					"variable": [
+						{
+							"key": "tipoArquivo",
+							"value": "pdf"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

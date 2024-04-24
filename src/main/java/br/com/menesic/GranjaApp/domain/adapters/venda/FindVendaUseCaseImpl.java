@@ -10,9 +10,9 @@ import br.com.menesic.GranjaApp.domain.utils.ExcelExporter;
 import br.com.menesic.GranjaApp.domain.utils.ExcelToPdfConverter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.poi.util.DocumentFormatException;
 import org.springframework.stereotype.Service;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,13 +32,13 @@ public class FindVendaUseCaseImpl implements FindVendaUseCase {
     }
 
     @Override
-    public byte[] downloadReport(String tipoArquivo) throws IOException {
+    public byte[] downloadReport(String tipoArquivo) throws IOException, DocumentFormatException {
         List<Map<String, String>> jsonList = reportData();
-        byte[] xlsx = ExcelExporter.getXlsxReport(jsonList);
-        if(TipoArquivoEnum.XLSX.getTipoArquivo().equalsIgnoreCase(tipoArquivo)) {
-            return xlsx;
+        byte[] xls = ExcelExporter.getXlsxReport(jsonList);
+        if(TipoArquivoEnum.XLS.getTipoArquivo().equalsIgnoreCase(tipoArquivo)) {
+            return xls;
         }
-        return ExcelToPdfConverter.convertExcelToPdf(xlsx);
+        return ExcelToPdfConverter.convertXlsToPdf(xls);
     }
 
     private List<Map<String, String>> reportData() {

@@ -3,7 +3,7 @@ package br.com.menesic.GranjaApp.domain.enums;
 import java.math.BigDecimal;
 
 public enum TipoArquivoEnum {
-    XLSX("xlsx"),
+    XLS("xls"),
     PDF("pdf");
     private final String tipoArquivo;
 
