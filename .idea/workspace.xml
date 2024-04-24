@@ -6,15 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e4132a17-cd10-4ba4-9fd4-908e0288ada4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/config/swagger/ApiOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/config/swagger/APIOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/PatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/PatoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GranjaApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GranjaApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/VendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/VendaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/FindVendaUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/FindVendaUseCaseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/enums/TipoClienteEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/enums/TipoClienteEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/exception/APIExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/exception/APIExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/ports/usecase/venda/FindVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/ports/usecase/venda/FindVendaUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelExporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/APIException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/APIException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/ApiOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/ApiOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/teste.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,12 +121,17 @@
   <component name="RunManager" selected="Application.GranjaApplication">
     <configuration name="ExcelExporter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.utils.ExcelExporter" />
-      <module name="backend-with-java-spring-postgres-docker-flyway" />
+      <module name="GranjaApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,13 +151,20 @@
       </method>
     </configuration>
     <configuration name="GranjaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.GranjaApplication" />
-      <module name="backend-with-java-spring-postgres-docker-flyway" />
+      <module name="GranjaApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.menesic.GranjaApp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,8 +177,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExcelExporter" />
         <item itemvalue="Application.GranjaApplication" />
+        <item itemvalue="Application.ExcelExporter" />
         <item itemvalue="Application.ExcelToPdfConverter" />
       </list>
     </recent_temporary>
@@ -191,6 +204,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelToPdfConverter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelToPdfConverter.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend_with_java_spring_postgres_docker_flyway$GranjaApp.ic" NAME="GranjaApp Coverage Results" MODIFIED="1713589355266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

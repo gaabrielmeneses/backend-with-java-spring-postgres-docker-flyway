@@ -12,6 +12,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
+import java.io.IOException;
 import java.util.List;
 
 @Tag(name = "Controller Pato")
@@ -44,7 +46,7 @@ public class VendaController {
     }
 
     @APIOperation(
-            method = "POST",
+            method = "GET",
             description = "Buscar todas as vendas",
             summary = "Buscar todas as vendas"
     )
@@ -52,5 +54,16 @@ public class VendaController {
     @ResponseStatus(HttpStatus.OK)
     public List<FindAllVendaDto> findAll() {
         return List.of(modelMapper.map(findVendaUseCase.findAll(), FindAllVendaDto[].class));
+    }
+
+    @APIOperation(
+            method = "GET",
+            description = "Download do report em Excel(.xlsx) ou PDF(.pdf) de todas as vendas",
+            summary = "Download do report em Excel(.xlsx) ou PDF(.pdf) de todas as vendas"
+    )
+    @GetMapping(value = "/download/{tipoArquivo}")
+    @ResponseStatus(HttpStatus.OK)
+    public byte[] downloadXlsx(@PathVariable("tipoArquivo") String tipoArquivo) throws IOException {
+        return findVendaUseCase.downloadReport(tipoArquivo);
     }
 }

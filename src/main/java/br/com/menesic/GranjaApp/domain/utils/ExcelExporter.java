@@ -12,7 +12,6 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
-import org.springframework.stereotype.Service;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -25,7 +24,7 @@ import java.util.Map;
 @Slf4j
 public class ExcelExporter {
 
-    public byte[] getXlsxReport(List<Map<String, String>> jsonList, String excelFilePath) throws IOException {
+    public static byte[] getXlsxReport(List<Map<String, String>> jsonList) throws IOException {
         try (Workbook workbook = new HSSFWorkbook()) {
             Sheet sheet = workbook.createSheet("Relatório de gerenciamento de patos");
 
@@ -51,7 +50,7 @@ public class ExcelExporter {
             int rowNum = 3;
             for (Map<String, String> jsonMap : jsonList) {
                 Row row = sheet.createRow(rowNum++);
-                int colNum = 2;
+                int colNum = 1;
                 for (String header : headers) {
                     Cell cell = row.createCell(colNum++);
                     Object value = jsonMap.get(header.toLowerCase().replace(" ", "_"));
@@ -68,9 +67,7 @@ public class ExcelExporter {
             // Ajusta automaticamente a largura das colunas
             for (int i = 0; i < headers.length; i++) {
                 sheet.autoSizeColumn(i+4);
-            }
-
-            // Escreve no arquivo Excel
+            }            // Escreve no arquivo Excel
             try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
                 workbook.write(outputStream);
                 log.info("Arquivo .xlsx criado com sucesso!");
@@ -82,7 +79,7 @@ public class ExcelExporter {
         }
     }
 
-    public static void export(List<Map<String, String>> jsonList, String excelFilePath) throws IOException {
+    public void export(List<Map<String, String>> jsonList, String excelFilePath) throws IOException {
         try (Workbook workbook = new HSSFWorkbook()) {
             Sheet sheet = workbook.createSheet("Relatório de gerenciamento de patos");
 
@@ -108,7 +105,7 @@ public class ExcelExporter {
             int rowNum = 3;
             for (Map<String, String> jsonMap : jsonList) {
                 Row row = sheet.createRow(rowNum++);
-                int colNum = 2;
+                int colNum = 1;
                 for (String header : headers) {
                     Cell cell = row.createCell(colNum++);
                     Object value = jsonMap.get(header.toLowerCase().replace(" ", "_"));
@@ -155,7 +152,7 @@ public class ExcelExporter {
         style.setAlignment(HorizontalAlignment.CENTER);
         return style;
     }
-
+/*
     public static void main(String[] args) {
         List<Map<String, String>> jsonList = new ArrayList<>();
 
@@ -185,6 +182,6 @@ public class ExcelExporter {
         } catch (IOException e) {
             System.err.println("Erro ao exportar lista para Excel: " + e.getMessage());
         }
-    }
+    }*/
 }
 
