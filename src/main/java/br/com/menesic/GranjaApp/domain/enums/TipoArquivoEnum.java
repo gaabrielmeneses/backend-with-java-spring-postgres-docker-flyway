@@ -1,7 +1,5 @@
 package br.com.menesic.GranjaApp.domain.enums;
 
-import java.math.BigDecimal;
-
 public enum TipoArquivoEnum {
     XLS("xls"),
     PDF("pdf");

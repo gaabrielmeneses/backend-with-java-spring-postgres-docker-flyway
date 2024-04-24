@@ -27,12 +27,16 @@ public class CreateVendaUseCaseImpl implements CreateVendaUseCase {
         log.info("[CreateVendaUseCaseImpl] - save");
         Cliente cliente = findClienteUseCase.findByNome(vendaDto.getCliente().getNome()).orElseThrow(() -> new EntityNotFoundException("Cliente não encontrado em nossa base de dados!"));
         vendaDto.getPato().forEach(patoDto -> {
-            findPatoUseCase.findByNome(patoDto.getNome()).ifPresent(pato -> {
-                pato.setVendido(true);
-                Venda venda = Venda.builderVenda(cliente, pato);
-                vendaRepository.save(venda);
-                log.info("[CreateVendaUseCaseImpl] - save - venda para o cliente: {} SUCCESS ", cliente.getNome());
-            });
+            findPatoUseCase.findByNome(patoDto.getNome()).ifPresentOrElse(
+                pato -> {
+                    pato.setVendido(true);
+                    Venda venda = Venda.builderVenda(cliente, pato);
+                    vendaRepository.save(venda);
+                    log.info("[CreateVendaUseCaseImpl] - save - venda para o cliente: {} SUCCESS ", cliente.getNome());
+                },
+                () -> {
+                    throw new EntityNotFoundException("Pato não encontrado em nossa base de dados!");
+                });
         });
     }
 }

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4132a17-cd10-4ba4-9fd4-908e0288ada4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/FindVendaUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/FindVendaUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/ClienteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/ClienteDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/FindAllVendaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/FindAllVendaDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/enums/TipoArquivoEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/enums/TipoArquivoEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelToPdfConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelToPdfConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/menesic/GranjaApp/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/ClienteDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/ClienteDto.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,68 +114,91 @@
       <recent name="br.com.menesic.GranjaApp.domain.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GranjaApplication">
-    <configuration name="ExcelExporter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.utils.ExcelExporter" />
+  <component name="RunManager" selected="JUnit.domain in GranjaApp">
+    <configuration name="CreateVendaUseCaseImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GranjaApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.utils.*" />
+          <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.venda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
+      <option name="PACKAGE_NAME" value="br.com.menesic.GranjaApp.domain.venda" />
+      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.venda.CreateVendaUseCaseImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExcelToPdfConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.utils.ExcelToPdfConverter" />
-      <module name="backend-with-java-spring-postgres-docker-flyway" />
+    <configuration name="CreateVendaUseCaseImplTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GranjaApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.utils.*" />
+          <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.venda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="br.com.menesic.GranjaApp.domain.venda" />
+      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.venda.CreateVendaUseCaseImplTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GranjaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.GranjaApplication" />
+    <configuration name="CreateVendaUseCaseImplTest.testSaveWithUnknownPato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GranjaApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.menesic.GranjaApp.*" />
+          <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.venda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
+      <option name="PACKAGE_NAME" value="br.com.menesic.GranjaApp.domain.venda" />
+      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.venda.CreateVendaUseCaseImplTest" />
+      <option name="METHOD_NAME" value="testSaveWithUnknownPato" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindVendaUseCaseImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GranjaApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.venda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="br.com.menesic.GranjaApp.domain.venda" />
+      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.venda.FindVendaUseCaseImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="domain in GranjaApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GranjaApp" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/br/com/menesic/GranjaApp/domain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExcelExporter" />
-      <item itemvalue="Application.ExcelToPdfConverter" />
-      <item itemvalue="Application.GranjaApplication" />
+      <item itemvalue="JUnit.CreateVendaUseCaseImplTest" />
+      <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSave" />
+      <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSaveWithUnknownPato" />
+      <item itemvalue="JUnit.FindVendaUseCaseImplTest" />
+      <item itemvalue="JUnit.domain in GranjaApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GranjaApplication" />
-        <item itemvalue="Application.ExcelExporter" />
-        <item itemvalue="Application.ExcelToPdfConverter" />
+        <item itemvalue="JUnit.domain in GranjaApp" />
+        <item itemvalue="JUnit.FindVendaUseCaseImplTest" />
+        <item itemvalue="JUnit.CreateVendaUseCaseImplTest" />
+        <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSaveWithUnknownPato" />
+        <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSave" />
       </list>
     </recent_temporary>
   </component>
