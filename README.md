@@ -22,6 +22,11 @@ Este projeto consiste em uma API desenvolvida em Java com o framework Spring Boo
 - Dockerizando a aplicação - 20m
 - Fazer descrição no README de inicialização do projeto e das tecnologias utilizadas - 1h
 
+## MER
+
+![image](https://github.com/gaabrielmeneses/backend-with-java-spring-postgres-docker-flyway/assets/47134065/15edee5b-6d63-400b-b3d2-77189fb86e16)
+
+
 ## Tecnologias Utilizadas
 
 - Java (Amazon Corretto 19.0.2)
