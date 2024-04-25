@@ -24,7 +24,7 @@ public class VendaConsumer implements Consumer<Venda> {
         json.put("nome", venda.getPato().getNome());
         json.put("status", venda.getPato().getVendido() ? StatusPatoEnum.VENDIDO.getStatus() : StatusPatoEnum.DISPONIVEL.getStatus());
         json.put("cliente", venda.getCliente().getNome());
-        json.put("tipoDoCliente", venda.getCliente().getDesconto() ? TipoClienteEnum.COM_DESCONTO.getTipo() : TipoClienteEnum.SEM_DESCONTO.getTipo());
+        json.put("tipo_do_cliente", venda.getCliente().getDesconto() ? TipoClienteEnum.COM_DESCONTO.getTipo() : TipoClienteEnum.SEM_DESCONTO.getTipo());
         json.put("valor", "R$ " + venda.getValor().toString());
         jsonList.add(json);
     }
