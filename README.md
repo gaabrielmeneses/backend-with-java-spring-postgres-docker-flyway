@@ -82,7 +82,7 @@ Este projeto consiste em uma API desenvolvida em Java com o framework Spring Boo
   ```
   docker compose up -d --build
   ```
-- Importe a collection `src\main\resources\collection` para o Postman.
+- Importe a collection `src\main\resources\collection\GranjaPatoApp.postman_collection.json` para o Postman.
 - Crie uma variável de ambiente chamada `endpoint-gateway` com o valor `http://localhost:8080` no Postman.
 - Teste os endpoints da API.
 
