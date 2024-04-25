@@ -95,3 +95,5 @@ Este projeto consiste em uma API desenvolvida em Java com o framework Spring Boo
 ## Observação Importante
 
 - O retorno do endpoint de download dos relatórios devem ser salvos com a extensão de arquivo correspondente para serem abertos corretamente, ou seja, utilize ".xls" para o relatório em formato Excel e ".pdf" para o relatório em formato PDF.
+
+Qualquer dúvida pode me mandar mensagem no linkedin -> https://www.linkedin.com/in/gabriel-meneses-da-silva-nascimento-49a18118a/
