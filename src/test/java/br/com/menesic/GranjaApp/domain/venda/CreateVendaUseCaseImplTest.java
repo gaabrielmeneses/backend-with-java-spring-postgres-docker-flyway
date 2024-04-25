@@ -10,6 +10,7 @@ import br.com.menesic.GranjaApp.domain.model.Venda;
 import br.com.menesic.GranjaApp.domain.ports.repository.VendaRepository;
 import br.com.menesic.GranjaApp.domain.ports.usecase.cliente.FindClienteUseCase;
 import br.com.menesic.GranjaApp.domain.ports.usecase.pato.FindPatoUseCase;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.jeasy.random.EasyRandom;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -24,7 +25,6 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import org.mockito.MockitoAnnotations;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.UUID;

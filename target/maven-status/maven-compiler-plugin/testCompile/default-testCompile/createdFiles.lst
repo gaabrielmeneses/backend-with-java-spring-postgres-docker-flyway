@@ -1,0 +1,6 @@
+br\com\menesic\GranjaApp\domain\pato\CreatePatoUseCaseImplTest.class
+br\com\menesic\GranjaApp\domain\cliente\CreateClienteUseCaseImplTest.class
+br\com\menesic\GranjaApp\domain\cliente\FindClienteUseCaseImplTest.class
+br\com\menesic\GranjaApp\domain\venda\CreateVendaUseCaseImplTest.class
+br\com\menesic\GranjaApp\domain\pato\FindPatoUseCaseImplTest.class
+br\com\menesic\GranjaApp\domain\venda\FindVendaUseCaseImplTest.class

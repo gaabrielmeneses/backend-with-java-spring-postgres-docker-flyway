@@ -4,6 +4,7 @@ import br.com.menesic.GranjaApp.domain.adapters.pato.CreatePatoUseCaseImpl;
 import br.com.menesic.GranjaApp.domain.dto.CreatePatoDto;
 import br.com.menesic.GranjaApp.domain.model.Pato;
 import br.com.menesic.GranjaApp.domain.ports.repository.PatoRepository;
+import jakarta.persistence.EntityExistsException;
 import lombok.extern.slf4j.Slf4j;
 import org.jeasy.random.EasyRandom;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -19,7 +20,6 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import org.mockito.MockitoAnnotations;
 
-import javax.persistence.EntityExistsException;
 import java.util.Optional;
 
 @Slf4j
