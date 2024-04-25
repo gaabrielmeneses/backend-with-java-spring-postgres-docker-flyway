@@ -7,11 +7,10 @@ import br.com.menesic.GranjaApp.domain.ports.repository.VendaRepository;
 import br.com.menesic.GranjaApp.domain.ports.usecase.cliente.FindClienteUseCase;
 import br.com.menesic.GranjaApp.domain.ports.usecase.pato.FindPatoUseCase;
 import br.com.menesic.GranjaApp.domain.ports.usecase.venda.CreateVendaUseCase;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import javax.persistence.EntityNotFoundException;
 
 @Service
 @RequiredArgsConstructor

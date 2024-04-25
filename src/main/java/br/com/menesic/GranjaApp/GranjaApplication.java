@@ -1,9 +1,9 @@
 package br.com.menesic.GranjaApp;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.annotation.PostConstruct;
 import java.util.Locale;
 import java.util.TimeZone;
 

@@ -5,6 +5,7 @@ import br.com.menesic.GranjaApp.domain.dto.CreatePatoDto;
 import br.com.menesic.GranjaApp.domain.dto.PatoDto;
 import br.com.menesic.GranjaApp.domain.ports.usecase.pato.CreatePatoUseCase;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
@@ -15,8 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.validation.Valid;
 
 @Tag(name = "Controller Pato")
 @Slf4j

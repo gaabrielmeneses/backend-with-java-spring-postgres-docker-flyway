@@ -4,11 +4,10 @@ import br.com.menesic.GranjaApp.domain.dto.CreatePatoDto;
 import br.com.menesic.GranjaApp.domain.model.Pato;
 import br.com.menesic.GranjaApp.domain.ports.repository.PatoRepository;
 import br.com.menesic.GranjaApp.domain.ports.usecase.pato.CreatePatoUseCase;
+import jakarta.persistence.EntityExistsException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import javax.persistence.EntityExistsException;
 
 @Service
 @RequiredArgsConstructor

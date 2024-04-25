@@ -73,7 +73,7 @@ public class ExcelExporter {
                 log.info("Arquivo .xls criado com sucesso!");
                 return outputStream.toByteArray();
             } catch (Exception e) {
-                log.error("Erro ao gerar arquivo .xls!", e.getStackTrace());
+                log.error("Erro ao gerar arquivo .xls!");
                 return new byte[0];
             }
         }

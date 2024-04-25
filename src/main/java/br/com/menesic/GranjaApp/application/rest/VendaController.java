@@ -6,6 +6,7 @@ import br.com.menesic.GranjaApp.domain.dto.VendaDto;
 import br.com.menesic.GranjaApp.domain.ports.usecase.venda.CreateVendaUseCase;
 import br.com.menesic.GranjaApp.domain.ports.usecase.venda.FindVendaUseCase;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
@@ -19,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
 import java.io.IOException;
 import java.util.List;
 

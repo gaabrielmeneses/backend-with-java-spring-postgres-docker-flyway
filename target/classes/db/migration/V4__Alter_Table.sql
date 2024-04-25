@@ -1,0 +1,22 @@
+ALTER TABLE IF EXISTS public.pato
+    ADD CONSTRAINT fk_mae_id FOREIGN KEY (fk_mae_id)
+    REFERENCES public.pato (id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public.venda
+    ADD CONSTRAINT fk_cliente_id FOREIGN KEY (fk_cliente_id)
+    REFERENCES public.cliente (id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public.venda
+    ADD CONSTRAINT fk_pato_id FOREIGN KEY (fk_pato_id)
+    REFERENCES public.pato (id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;

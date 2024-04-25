@@ -5,16 +5,99 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4132a17-cd10-4ba4-9fd4-908e0288ada4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/GranjaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/GranjaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/PatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/PatoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/VendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/application/rest/VendaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/pato/CreatePatoUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/pato/CreatePatoUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/ClienteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/ClienteDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/FindAllVendaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/FindAllVendaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/enums/TipoArquivoEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/enums/TipoArquivoEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelToPdfConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelToPdfConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/menesic/GranjaApp/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/ClienteDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/ClienteDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/CreatePatoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/CreatePatoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/PatoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/dto/PatoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/exception/APIExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/exception/APIExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/domain/utils/ExcelExporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/ClienteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/ClienteEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/PatoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/PatoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/VendaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/menesic/GranjaApp/infrastructure/database/entity/VendaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/scripts/1_script_inicial.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/GranjaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/APIException$APIExceptionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/APIException$APIExceptionBuilderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/APIException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/ApiOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/config/swagger/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/rest/ClienteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/rest/PatoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/application/rest/VendaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/cliente/CreateClienteUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/cliente/FindClienteUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/pato/CreatePatoUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/pato/FindPatoUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/pato/UpdatePatoUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/venda/CreateVendaUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/adapters/venda/FindVendaUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/ClienteDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/CreatePatoDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/FindAllVendaDto$FindAllVendaDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/FindAllVendaDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/PatoDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/ReportDto$ReportDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/ReportDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/VendaDto$VendaDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/VendaDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/dto/mapper/VendaConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/enums/StatusPatoEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/enums/TipoArquivoEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/enums/TipoClienteEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/enums/ValorPatoEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/exception/APIException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/exception/APIExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/exception/ErrorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/exception/MensageriaException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/model/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/model/Pato$PatoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/model/Pato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/model/Venda$VendaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/model/Venda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/repository/ClienteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/repository/PatoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/repository/VendaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/usecase/cliente/CreateClienteUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/usecase/cliente/FindClienteUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/usecase/pato/CreatePatoUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/usecase/pato/FindPatoUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/usecase/pato/UpdatePatoUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/usecase/venda/CreateVendaUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/ports/usecase/venda/FindVendaUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/utils/ExcelExporter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/domain/utils/ExcelToPdfConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/configuration/DatabaseConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/configuration/JacksonConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/entity/ClienteEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/entity/PatoEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/entity/VendaEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/repository/cliente/ClienteDatabaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/repository/cliente/ClienteRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/repository/pato/PatoDatabaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/repository/pato/PatoRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/repository/venda/VendaDatabaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/menesic/GranjaApp/infrastructure/database/repository/venda/VendaRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collection/GranjaPatoApp.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scripts/1_script_inicial.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/menesic/GranjaApp/domain/cliente/CreateClienteUseCaseImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/menesic/GranjaApp/domain/cliente/FindClienteUseCaseImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/menesic/GranjaApp/domain/pato/CreatePatoUseCaseImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/menesic/GranjaApp/domain/pato/FindPatoUseCaseImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/menesic/GranjaApp/domain/venda/CreateVendaUseCaseImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/menesic/GranjaApp/domain/venda/FindVendaUseCaseImplTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +176,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "C:/Users/GabrielNascimento/Desktop/teste_estudos/backend-with-java-spring-postgres-docker-flyway",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "C:/Users/GabrielNascimento/Desktop/teste_estudos/backend-with-java-spring-postgres-docker-flyway/src/main/resources/db/migration",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -102,9 +185,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GabrielNascimento\Desktop\teste_estudos\backend-with-java-spring-postgres-docker-flyway\src\main\resources\db\migration" />
       <recent name="C:\Users\gmsn\Desktop\desafios_estudos\backend-with-java-spring-postgres-docker-flyway\src\main\java\br\com\menesic\GranjaApp\domain" />
       <recent name="C:\Users\gmsn\Desktop\desafios_estudos\backend-with-java-spring-postgres-docker-flyway\src\main\resources" />
       <recent name="C:\Users\gmsn\Desktop\desafios_estudos\backend-with-java-spring-postgres-docker-flyway\src\main\java\br\com\menesic\GranjaApp\domain\port\usecase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GabrielNascimento\Desktop\teste_estudos\backend-with-java-spring-postgres-docker-flyway\src\main\resources\db\migration" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.menesic.GranjaApp.domain.dto.consumer" />
@@ -114,7 +201,22 @@
       <recent name="br.com.menesic.GranjaApp.domain.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.domain in GranjaApp">
+  <component name="RunManager" selected="Application.GranjaApplication">
+    <configuration name="GranjaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.GranjaApplication" />
+      <module name="GranjaApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.menesic.GranjaApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateVendaUseCaseImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GranjaApp" />
       <extension name="coverage">
@@ -126,22 +228,6 @@
       <option name="PACKAGE_NAME" value="br.com.menesic.GranjaApp.domain.venda" />
       <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.venda.CreateVendaUseCaseImplTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateVendaUseCaseImplTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GranjaApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.menesic.GranjaApp.domain.venda.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.menesic.GranjaApp.domain.venda" />
-      <option name="MAIN_CLASS_NAME" value="br.com.menesic.GranjaApp.domain.venda.CreateVendaUseCaseImplTest" />
-      <option name="METHOD_NAME" value="testSave" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,19 +272,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GranjaApplication" />
       <item itemvalue="JUnit.CreateVendaUseCaseImplTest" />
-      <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSave" />
       <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSaveWithUnknownPato" />
       <item itemvalue="JUnit.FindVendaUseCaseImplTest" />
       <item itemvalue="JUnit.domain in GranjaApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GranjaApplication" />
         <item itemvalue="JUnit.domain in GranjaApp" />
         <item itemvalue="JUnit.FindVendaUseCaseImplTest" />
         <item itemvalue="JUnit.CreateVendaUseCaseImplTest" />
         <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSaveWithUnknownPato" />
-        <item itemvalue="JUnit.CreateVendaUseCaseImplTest.testSave" />
       </list>
     </recent_temporary>
   </component>
