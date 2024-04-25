@@ -14,7 +14,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"pato\": {\r\n    \"nome\": \"Pato 1.0\"\r\n  },\r\n  \"patoMae\": {\r\n    \"nome\": \"Pato Mae 1.0\"\r\n  }\r\n}",
+					"raw": "{\r\n  \"pato\": {\r\n    \"nome\": \"Pato 3.0\"\r\n  },\r\n  \"patoMae\": {\r\n    \"nome\": \"Pato Mae 3.0\"\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -42,7 +42,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nome\": \"Cliente 1\",\r\n  \"desconto\": true\r\n}",
+					"raw": "{\r\n  \"nome\": \"Cliente 3\",\r\n  \"desconto\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -70,7 +70,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cliente\": {\r\n        \"nome\": \"Cliente 2\"\r\n    },\r\n    \"pato\": [\r\n        {\r\n            \"nome\": \"Pato Mae 1.0\"\r\n        },\r\n        {\r\n            \"nome\": \"Pato 1.0\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"cliente\": {\r\n        \"nome\": \"Cliente 3\"\r\n    },\r\n    \"pato\": [\r\n        {\r\n            \"nome\": \"Pato 2.0\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
