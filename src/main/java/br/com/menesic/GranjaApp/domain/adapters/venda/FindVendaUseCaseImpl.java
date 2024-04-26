@@ -34,6 +34,7 @@ public class FindVendaUseCaseImpl implements FindVendaUseCase {
         findAll().forEach(vendaConsumer);
         List<Map<String, String>> dadosRelatorio = vendaConsumer.getJsonList();
         byte[] xls = ExcelExporter.getXlsxReport(dadosRelatorio);
+        log.info("Download do relatório executado com sucesso!");
         return TipoArquivoEnum.XLS.getTipoArquivo().equalsIgnoreCase(tipoArquivo) ? xls : ExcelToPdfConverter.convertXlsToPdf(xls);
     }
 }

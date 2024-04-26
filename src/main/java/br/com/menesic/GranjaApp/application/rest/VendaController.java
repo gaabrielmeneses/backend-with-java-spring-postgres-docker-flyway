@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.util.List;
 
-@Tag(name = "Controller Pato")
+@Tag(name = "Controller Venda")
 @Slf4j
 @RestController
 @RequiredArgsConstructor

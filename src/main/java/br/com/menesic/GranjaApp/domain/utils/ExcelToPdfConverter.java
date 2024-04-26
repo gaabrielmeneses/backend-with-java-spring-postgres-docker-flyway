@@ -4,6 +4,7 @@ import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Table;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -16,6 +17,7 @@ import java.util.Objects;
 import java.util.stream.IntStream;
 
 
+@Slf4j
 public class ExcelToPdfConverter {
 
     public static byte[] convertXlsToPdf(byte[] xlsBytes) throws IOException {
@@ -38,6 +40,7 @@ public class ExcelToPdfConverter {
                     })
                     .forEach(document::add);
             document.close();
+            log.info("Arquivo .pdf criado com sucesso!");
             return pdfStream.toByteArray();
         }
     }
