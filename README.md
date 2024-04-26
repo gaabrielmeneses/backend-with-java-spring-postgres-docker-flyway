@@ -16,8 +16,7 @@ Este projeto consiste em uma API desenvolvida em Java com o framework Spring Boo
 - Teste unitário cadastro dos patos - 30m
 - Teste unitário cadastro dos clientes - 30m
 - Teste unitário de cadastro das vendas - 30m
-- Teste unitário download relatório de gerenciamento de patos .xls - 30m
-- Teste unitário download relatórios de gerenciamento de patos .pdf - 30m
+- Teste unitário download relatório de gerenciamento de patos .xls e .pdf - 30
 - Implementação Flyway - 10m
 - Dockerizando a aplicação - 20m
 - Fazer descrição no README de inicialização do projeto e das tecnologias utilizadas - 1h
